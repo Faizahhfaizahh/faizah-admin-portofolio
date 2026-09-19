@@ -9,17 +9,18 @@
 <body class="font-body antialiased">
 
   <!-- NAVBAR -->
-  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-line">
-    <nav class="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
-      <span class="font-mono text-sm tracking-widest text-folder">faizah.id</span>
-      <div class="hidden sm:flex gap-1">
-        <a href="#beranda" class="px-4 py-2 text-sm font-medium border-b-2 border-folder text-ink">Beranda</a>
-        <a href="#tentang" class="px-4 py-2 text-sm font-medium border-b-2 border-transparent hover:border-line text-ink/70 hover:text-ink transition">Tentang</a>
-        <a href="#keahlian" class="px-4 py-2 text-sm font-medium border-b-2 border-transparent hover:border-line text-ink/70 hover:text-ink transition">Keahlian</a>
-        <a href="#proyek" class="px-4 py-2 text-sm font-medium border-b-2 border-transparent hover:border-line text-ink/70 hover:text-ink transition">Proyek</a>
-      </div>
-    </nav>
-  </header>
+<header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-line">
+  <nav class="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
+    <span class="font-mono text-sm tracking-widest text-folder">faizah.id</span>
+    <div class="hidden sm:flex gap-1">
+      <a href="#beranda" data-nav-link class="nav-link px-4 py-2 text-sm font-medium border-b-2 border-transparent text-ink/70 hover:text-ink transition">Beranda</a>
+      <a href="#tentang" data-nav-link class="nav-link px-4 py-2 text-sm font-medium border-b-2 border-transparent text-ink/70 hover:text-ink transition">Tentang</a>
+      <a href="#keahlian" data-nav-link class="nav-link px-4 py-2 text-sm font-medium border-b-2 border-transparent text-ink/70 hover:text-ink transition">Keahlian</a>
+      <a href="#proyek" data-nav-link class="nav-link px-4 py-2 text-sm font-medium border-b-2 border-transparent text-ink/70 hover:text-ink transition">Proyek</a>
+      <a href="#sertifikat" data-nav-link class="nav-link px-4 py-2 text-sm font-medium border-b-2 border-transparent text-ink/70 hover:text-ink transition">Sertifikat</a>
+    </div>
+  </nav>
+</header>
 
   <main>
     <!-- ========== BERANDA ========== -->
@@ -29,15 +30,16 @@
           <h1 class="font-display text-4xl sm:text-5xl leading-tight text-ink mb-3">
             Staff Administrasi & Data
           </h1>
-          <p class="text-lg sm:text-xl text-folder font-medium mb-6">
-            Administrasi Modern, Rapi di Dokumen, Cepat dengan Teknologi.
-          </p>
-          <p class="text-ink/70 max-w-md mb-8 leading-relaxed">
-            Terbiasa mengolah data dan menyusun laporan secara sistematis, mulai dari pengumpulan dan analisis data dengan <span class="font-semibold text-ink">Excel</span> (PivotTable,
-            formula) hingga penyusunan dokumen formal yang rapi dan terstruktur.
-            Dilengkapi pemahaman <span class="font-semibold text-ink"> AI Generatif </span>untuk mempercepat proses kerja,
-            meminimalkan human error, dan mengotomatisasi tugas rutin.
-          </p>
+            <p class="text-lg sm:text-xl text-folder font-medium mb-6">
+              Administrasi rapi, didukung analisis data dan formula Excel yang efisien
+            </p>
+            <p class="text-ink/70 max-w-lg mb-8 leading-relaxed text-justify">
+              Terbiasa menyusun dokumen dan data secara rapi, mulai dari mengelola data dengan
+              <strong class="text-ink font-semibold">Excel (Pivot Table, formula)</strong> hingga membangun
+              <strong class="text-ink font-semibold">dashboard visual</strong> untuk mendukung pengambilan keputusan.
+              Saya juga terbiasa memanfaatkan <strong class="text-ink font-semibold">AI generatif</strong> untuk membantu
+              menentukan rumus dan langkah pengerjaan yang tepat sebelum diterapkan langsung di Excel.
+            </p>
           <a href="/cv-nama-kamu.pdf" download
              class="inline-flex items-center gap-2 bg-folder text-paper px-6 py-3 rounded-full font-semibold hover:bg-ink transition">
             Unduh CV
@@ -62,11 +64,12 @@
           <!-- Foto -->
           <div class="sm:sticky sm:top-24 self-start flex justify-center">
             <div class="flex flex-col items-center">
-              <div class="w-6 h-16 bg-folder rounded-t-sm"></div>  <!-- Tali lanyard -->
-              <div class="w-56 bg-white rounded-xl shadow-xl overflow-hidden pb-4 -mt-1"> <!-- Body Card/Badan Kartu -->
+              <!-- Tali lanyard: lebih tipis & panjang -->
+              <div class="w-3 h-24 bg-folder rounded-t-full"></div>
+              <div class="w-56 bg-white rounded-xl shadow-2xl overflow-hidden pb-4 -mt-1"> <!-- Body Card/Badan Kartu -->
 
                 <div class="flex justify-center pt-4 pb-3"> <!-- Lubang buat tali lanyard nya -->
-                  <div class="w-10 h-3 rounded-full bg-line"></div>
+                  <div class="w-9 h-3.5 rounded-full border-2 border-line bg-paper"></div>
                 </div>
                 <div class="px-3"> <!-- Foto -->
                   <div class="aspect-[4/5] rounded-md overflow-hidden">
@@ -83,42 +86,42 @@
           <div>
             <div class="space-y-4">
               <div class="border-l-2 border-folder pl-4">
-                <p class="font-mono text-xs text-stamp uppercase tracking-wide mb-1">Pengalaman</p>
+                <p class="font-mono text-xs text-stamp uppercase tracking-wide mb-1">Pengalaman Kerja</p>
                 <p class="text-ink/70 leading-relaxed">
-                  Mengelola dan menyusun data pendukung menggunakan
-                  <span class="font-semibold text-ink">Excel</span> (termasuk PivotTable)
-                  dalam proyek pengembangan web untuk Tugas Akhir, menyusun
-                  <span class="font-semibold text-ink">jurnal KKN</span>, dan mengelola
-                  data acara sebagai divisi acara KKN.
+                  Menjalani Praktik Kerja Lapangan selama 2 bulan di
+                  <span class="font-semibold text-ink">Bapenda NTB</span>, membantu perbaikan sistem
+                  kepegawaian dengan memasukkan ratusan data pegawai dari Excel ke sistem web bersama
+                  tim, serta turut menyampaikan laporan progres dalam presentasi mingguan.
                 </p>
               </div>
 
               <div class="border-l-2 border-folder pl-4">
-                <p class="font-mono text-xs text-stamp uppercase tracking-wide mb-1">Skill Tambahan</p>
+                <p class="font-mono text-xs text-stamp uppercase tracking-wide mb-1">Pengalaman Akademik</p>
                 <p class="text-ink/70 leading-relaxed">
-                  Memahami <span class="font-semibold text-ink">AI Generatif & Prompt Engineering</span>
-                  untuk mendukung efisiensi kerja.
+                  Menyusun dan mengelola dataset pendukung Tugas Akhir (117 entri) menggunakan
+                  <span class="font-semibold text-ink">Excel</span> dengan kategorisasi data melalui
+                  Data Validation, menyusun <span class="font-semibold text-ink">jurnal KKN</span>
+                  menggunakan <span class="font-semibold text-ink">Word</span>, serta mengelola data
+                  acara sebagai divisi acara KKN.
                 </p>
               </div>
 
               <div class="border-l-2 border-folder pl-4">
-                <p class="font-mono text-xs text-stamp uppercase tracking-wide mb-1">Bekerja di Bawah Tekanan</p>
+                <p class="font-mono text-xs text-stamp uppercase tracking-wide mb-1">Cara Kerja dengan AI</p>
                 <p class="text-ink/70 leading-relaxed">
-                    Terbiasa mengatur waktu untuk menyelesaikan tugas besar, praktikum,
-                    dan presentasi yang jadwalnya sering berdekatan.
+                  Terbiasa memanfaatkan <span class="font-semibold text-ink">AI Generatif & Prompt Engineering</span>
+                  untuk riset cepat menentukan rumus dan langkah penyelesaian tugas administratif
+                  sebelum diterapkan secara manual — memastikan hasil tetap terverifikasi dan akurat.
                 </p>
               </div>
 
               <div class="border-l-2 border-folder pl-4">
                 <p class="font-mono text-xs text-stamp uppercase tracking-wide mb-1">Latar Belakang</p>
                 <p class="text-ink/70 leading-relaxed">
-                  Berlatar Teknik Informatika, memilih mengarahkan kemampuan
-                  teknis ke bidang administrasi karena lebih menikmati proses
-                  mengelola sistem, data, dan alur kerja yang rapi dibanding
-                  pengembangan software. Portofolio ini sendiri saya bangun menggunakan
-                  <span class="font-semibold text-ink">HTML dan Tailwind CSS</span>,
-                  sebagai bukti nyata bahwa ilmu yang saya pelajari selama kuliah
-                  tetap saya manfaatkan.
+                  Berlatar belakang <span class="font-semibold text-ink">Teknik Informatika</span>,
+                  saya membawa pola pikir logis dan cara kerja terstruktur ke pekerjaan administrasi
+                  — seperti yang terlihat dari pengelolaan data yang rapi dan pendekatan sistematis
+                  dalam memanfaatkan AI untuk menyelesaikan tugas.
                 </p>
               </div>
 
@@ -130,7 +133,7 @@
               <p class="text-ink font-medium leading-relaxed">
                 Teknik Informatika &mdash; Universitas Mataram
               </p>
-              <p class="text-ink/60 text-sm mt-1">2022 &ndash; 2026</p>
+              <p class="text-ink/60 text-sm mt-1">2022 &ndash; 2026 &middot; IPK 3,49</p>
             </div>
           </div>
 
@@ -215,10 +218,10 @@
               <span class="text-xs text-ink/60 group-hover:text-ink transition">Claude</span>
             </div>
 
-            <div class="group flex flex-col items-center gap-2 transition-transform duration-300 hover:-translate-y-2">
+            <!-- <div class="group flex flex-col items-center gap-2 transition-transform duration-300 hover:-translate-y-2">
               <img src="https://img.icons8.com/color/48/trello.png" alt="trello" class="w-12 h-12 drop-shadow-md" />
               <span class="text-xs text-ink/60 group-hover:text-ink transition">Trello</span>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -243,11 +246,6 @@
             </div>
 
             <div class="border-l-2 border-ink/20 pl-4">
-              <p class="font-mono text-xs text-stamp mb-1">04</p>
-              <h3 class="font-medium text-ink">Manajemen Proyek</h3>
-            </div>
-
-            <div class="border-l-2 border-ink/20 pl-4">
               <p class="font-mono text-xs text-stamp mb-1">05</p>
               <h3 class="font-medium text-ink">Bekerja Dibawah Tekanan</h3>
             </div>
@@ -269,19 +267,67 @@
     </section>
 
     <!-- ========== PROJECT ========== -->
-    <section id="project" class="border-t border-line bg-white/40">
+    <section id="proyek" class="border-t border-line bg-white/40">
       <div class="max-w-5xl mx-auto px-6 py-20">
         <h2 class="font-display text-3xl text-ink mb-3">Proyek</h2>
 
-        <div class="grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-6 sm:gap-y-10">
+        <div id="proyek-track" class="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-6 items-stretch">
 
           <!-- Proyek 01 -->
-          <div class="relative bg-white/70 border border-line rounded-xl p-4 sm:p-6 hover:shadow-lg transition group">
-            <!-- Gambar dan CTA (Link) -->
-             <div class="relative rounded-lg overflow-hidden border border-line mb-4">
+          <div class="relative bg-white/70 border border-line rounded-xl p-4 sm:p-6 hover:shadow-lg transition group h-full flex flex-col">
+            <div class="relative rounded-lg overflow-hidden border border-line mb-4">
+              <img src="img/Dashboard anggaran wisuda.png" alt="Dashboard anggaran wisuda img"
+                class="w-full h-auto object-cover">
+              <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100">
+                <a href="https://docs.google.com/spreadsheets/d/1Yrrp0Q8QytsOPbEtKIxzC9AzaXpOcTlv3xAIYnbxeqE/edit?usp=sharing" target="_blank" rel="noopener"
+                  class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-3 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
+                  Lihat Detail
+                </a>
+              </div>
+            </div>
+            <h3 class="font-display text-lg sm:text-xl text-ink mb-2">Dashboard Anggaran Wisuda</h3>
+            <p class="text-ink/70 text-sm leading-relaxed mb-4">
+              Deskripsi singkat proyek: apa yang dikerjakan, konteksnya, dan hasil/dampaknya.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Dashboard</span>
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Diagram</span>
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Pivot table</span>
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Slicer</span>
+            </div>
+          </div>
+
+          <!-- Proyek 02 -->
+          <div class="relative bg-white/70 border border-line rounded-xl p-4 sm:p-6 hover:shadow-lg transition group h-full flex flex-col">
+            <div class="relative rounded-lg overflow-hidden border border-line mb-4">
+              <img src="img/cuti karyawan.png" alt="Rekap cuti karyawan img"
+                class="w-full h-auto object-cover">
+              <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100">
+                <a href="https://docs.google.com/spreadsheets/d/1zW0wtCckemQgZEGk6Dw6CmnP6dt7Adti_k2T1EJnOD0/edit?usp=sharing" target="_blank" rel="noopener"
+                  class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-3 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
+                  Lihat Detail
+                </a>
+              </div>
+            </div>
+            <h3 class="font-display text-lg sm:text-xl text-ink mb-2">Rekap Cuti & Izin Karyawan</h3>
+            <p class="text-ink/70 text-sm leading-relaxed mb-4">
+              Sistem pencatatan dan pengelolaan cuti karyawan berbasis Google Form dan Google Sheets, dirancang untuk menggantikan proses pengajuan cuti manual (kertas/WhatsApp) yang rawan kesalahan pencatatan.
+              Sistem ini mencakup alur pengajuan, verifikasi dokumen pendukung, serta perhitungan sisa cuti otomatis per karyawan menggunakan formula lintas sheet.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Google Form</span>
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">SUMIFS</span>
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">NETWORKDAYS</span>
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Data Validation</span>
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Conditional Formatting</span>
+            </div>
+          </div>
+
+          <!-- Proyek 03 -->
+          <div class="relative bg-white/70 border border-line rounded-xl p-4 sm:p-6 hover:shadow-lg transition group h-full flex flex-col">
+            <div class="relative rounded-lg overflow-hidden border border-line mb-4">
               <img src="img/reimbursement-preview.png" alt="Preview Database Reimbursement Karyawan"
                 class="w-full h-auto object-cover">
-
               <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100">
                 <a href="https://drive.google.com/file/d/1FpbFPKpKb0tJSlyMZDYEvzj8rvY9SXMG/view?usp=sharing" target="_blank" rel="noopener"
                   class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-3 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
@@ -292,88 +338,71 @@
                   Lihat Database
                 </a>
               </div>
-             </div>
-
+            </div>
             <h3 class="font-display text-lg sm:text-xl text-ink mb-2">Database & Monitoring Reimbursement Karyawan</h3>
             <p class="text-ink/70 text-sm leading-relaxed mb-4">
               Studi kasus administrasi: memverifikasi data pengajuan, menyusun form dan database
               reimbursement, menghitung ringkasan status dengan SUMIF, serta membuat monitoring
               per karyawan menggunakan dropdown dan FILTER.
             </p>
-            <div class="flex flex-wrap gap-2">
+            <div class="flex flex-wrap gap-2 mt-auto">
               <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">SUMIF</span>
               <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">FILTER</span>
               <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">DROPDOWN</span>
             </div>
           </div>
 
-          <!-- Proyek 02 -->
-          <div class="relative bg-white/70 border border-line rounded-xl p-4 sm:p-6 hover:shadow-lg transition group">
-            <!-- Gambar dan CTA (Link) -->
-             <div class="relative rounded-lg overflow-hidden border border-line mb-4">
-              <img src="img/reimbursement-preview.png" alt="Preview Database Reimbursement Karyawan"
-                class="w-full h-auto object-cover">
-
-              <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100">
-                <a href="https://drive.google.com/file/d/1FpbFPKpKb0tJSlyMZDYEvzj8rvY9SXMG/view?usp=sharing" target="_blank" rel="noopener"
-                  class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-3 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
-                  Lihat Detail
-                </a>
-              </div>
-             </div>
-
-            <h3 class="font-display text-lg sm:text-xl text-ink mb-2">Rekap & Analisis Kinerja Penjualan Antar Toko Menggunakan Pivot Table</h3>
-            <p class="text-ink/70 text-sm leading-relaxed mb-4">
-              Mengolah data transaksi retail dari 4 tabel terpisah (Customer, Produk, Toko, Transaksi) menjadi laporan penjualan yang informatif 
-              menggunakan VLOOKUP dan Pivot Table. Analisis mencakup performa penjualan per toko/region, kategori produk terlaris, dan pola pembelian berdasarkan 
-              demografi pelanggan.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Pivot Table</span>
-              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">VLOOKUP</span>
-            </div>
-          </div>
-
-          <!-- Proyek 03 -->
-          <div class="relative bg-white/70 border border-line rounded-xl p-4 sm:p-6 hover:shadow-lg transition group">
-            <!-- Gambar dan CTA (Link) -->
-             <div class="relative rounded-lg overflow-hidden border border-line mb-4">
-              <img src="img/Dashboard anggaran wisuda.png" alt="Dashboard anggaran wisuda img"
-                class="w-full h-auto object-cover">
-
-              <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100">
-                <a href="https://docs.google.com/spreadsheets/d/1Yrrp0Q8QytsOPbEtKIxzC9AzaXpOcTlv3xAIYnbxeqE/edit?usp=sharing" target="_blank" rel="noopener"
-                  class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-3 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
-                  Lihat Detail
-                </a>
-              </div>
-             </div>
-            <h3 class="font-display text-lg sm:text-xl text-ink mb-2">Dashboard Anggaran Wisuda</h3>
-            <p class="text-ink/70 text-sm leading-relaxed mb-4">
-              Deskripsi singkat proyek: apa yang dikerjakan, konteksnya, dan hasil/dampaknya.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Dashboard</span>
-              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Diagram</span>
-              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Pivot table</span>
-              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Slicer</span>
-            </div>
-          </div>
-
           <!-- Proyek 04 -->
-          <div class="relative bg-white/70 border border-line rounded-xl p-4 sm:p-6 hover:shadow-lg transition">
-            <h3 class="font-display text-lg sm:text-xl text-ink mb-2">Judul Proyek</h3>
+          <div class="relative bg-white/70 border border-line rounded-xl p-4 sm:p-6 hover:shadow-lg transition group h-full flex flex-col">
+            <div class="relative rounded-lg overflow-hidden border border-line mb-4">
+              <img src="img/dataset ta.png" alt="Preview Cleaning Dataset Tanaman"
+                class="w-full h-auto object-cover">
+              <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100">
+                <a href="https://docs.google.com/spreadsheets/d/1yTscXUXiSCeAkAlV5gm05zhw-xfwl49J/edit?usp=sharing&ouid=101377189574566930916&rtpof=true&sd=true" target="_blank" rel="noopener"
+                  class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-3 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
+                  Lihat Detail
+                </a>
+              </div>
+            </div>
+            <h3 class="font-display text-lg sm:text-xl text-ink mb-2">Cleaning Dataset Tanaman Tugas Akhir</h3>
             <p class="text-ink/70 text-sm leading-relaxed mb-4">
-              Deskripsi singkat proyek: apa yang dikerjakan, konteksnya, dan hasil/dampaknya.
+              Membersihkan 100+ entri data tanaman untuk Tugas Akhir, menangani duplikat baik yang identik maupun semantik
+              (nama lokal vs nama ilmiah yang merujuk tanaman sama), data kosong, dan format tidak konsisten. Nama ilmiah
+              diriset dan diverifikasi manual, lalu dikategorikan menggunakan Data Validation.
             </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Tag</span>
-              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Tag</span>
-              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Tag</span>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Cleaning data</span>
+              <span class="font-mono text-[11px] text-ink/60 border border-line rounded-full px-2.5 py-1">Data validation</span>
             </div>
           </div>
 
         </div>
+
+        <!-- Pagination Proyek (otomatis muncul kalau proyek > 4) -->
+        <div id="proyek-pagination" class="hidden items-center justify-center gap-4 mt-10">
+          <button type="button" id="proyek-prev" aria-label="Proyek sebelumnya"
+                  class="w-10 h-10 flex items-center justify-center rounded-full
+                        bg-paper/90 border border-line text-ink/60
+                        hover:bg-ink hover:text-paper hover:border-ink
+                        disabled:opacity-30 disabled:pointer-events-none transition">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div id="proyek-dots" class="flex items-center gap-2"></div>
+
+          <button type="button" id="proyek-next" aria-label="Proyek selanjutnya"
+                  class="w-10 h-10 flex items-center justify-center rounded-full
+                        bg-paper/90 border border-line text-ink/60
+                        hover:bg-ink hover:text-paper hover:border-ink
+                        disabled:opacity-30 disabled:pointer-events-none transition">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
       </div>
     </section>
 
@@ -410,7 +439,7 @@
 
           <!-- Gambar sertifikat & Link -->
           <div class="cert-page relative rounded-xl overflow-hidden border border-line shadow-lg group" data-page="1">
-            <img src="img/Sertifikat1.png" alt="Sertifikat 1" class="w-full h-auto object-cover" />
+            <img src="img/Pivot table - myskill.png" alt="Sertifikat 1" class="w-full h-auto object-cover" />
             <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
               <a href="https://drive.google.com/file/d/1VvDACkk1XPNtqGVkRxUbU92-_Vt6lZ_T/view?usp=sharing" target="_blank" rel="noopener"
                  class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-4 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
@@ -420,7 +449,17 @@
           </div>
 
           <div class="cert-page hidden relative rounded-xl overflow-hidden border border-line shadow-lg group" data-page="2">
-            <img src="img/Sertifikat2.jpg" alt="Sertifikat 2" class="w-full h-auto object-cover" />
+            <img src="img/Simple learn-Introduction to MS Excel.jpg" alt="Sertifikat 2" class="w-full h-auto object-cover" />
+            <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+              <a href="https://drive.google.com/file/d/15Qot26vr8VB9oXvzwuWy2qDZ7jJrytUg/view?usp=sharing" target="_blank" rel="noopener"
+                 class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-4 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
+                Lihat Sertifikat
+              </a>
+            </div>
+          </div>
+
+          <div class="cert-page hidden relative rounded-xl overflow-hidden border border-line shadow-lg group" data-page="3">
+            <img src="img/kepesertaan - yec.co.id.jpg" alt="Sertifikat 3" class="w-full h-auto object-cover" />
             <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
               <a href="https://drive.google.com/file/d/1k-FQVNGBjnyiEohbMYBVnamCLWzsC9UZ/view?usp=sharing" target="_blank" rel="noopener"
                  class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-4 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
@@ -429,20 +468,10 @@
             </div>
           </div>
 
-          <div class="cert-page hidden relative rounded-xl overflow-hidden border border-line shadow-lg group" data-page="3">
-            <img src="img/sertifikat-03.png" alt="Sertifikat 3" class="w-full h-auto object-cover" />
-            <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-              <a href="LINK_SERTIFIKAT_03" target="_blank" rel="noopener"
-                 class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-4 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
-                Lihat Sertifikat
-              </a>
-            </div>
-          </div>
-
           <div class="cert-page hidden relative rounded-xl overflow-hidden border border-line shadow-lg group" data-page="4">
-            <img src="img/sertifikat-04.png" alt="Sertifikat 4" class="w-full h-auto object-cover" />
+            <img src="img/Simple learn-Excel Automation using ChatGPT.jpg" alt="Sertifikat 4" class="w-full h-auto object-cover" />
             <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/70 transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-              <a href="LINK_SERTIFIKAT_04" target="_blank" rel="noopener"
+              <a href="https://drive.google.com/file/d/1YUZSyyD00BxmT_BsqkIpqy-JAt3euUTr/view?usp=sharing" target="_blank" rel="noopener"
                  class="font-mono text-xs uppercase tracking-wide bg-paper text-ink px-4 py-2 rounded-full hover:bg-stamp hover:text-paper transition">
                 Lihat Sertifikat
               </a>
@@ -466,7 +495,7 @@
           <div>
             <p class="font-mono text-sm tracking-widest text-folder mb-2">faizah.id</p>
             <p class="text-sm text-ink/60 leading-relaxed">
-              Staff Administrasi & Data &mdash; Rapi, Teliti, Sistematis.
+              Administrasi rapi, didukung analisis data dan formula Excel yang efisien
             </p>
           </div>
 
@@ -599,6 +628,87 @@
         nextBtn.addEventListener('click', () => { if (current < total) { current++; render(); } });
 
         render();
+      })();
+
+      (function() {
+        const perPage = 4;
+        const track = document.getElementById('proyek-track');
+        const items = Array.from(track.children);
+        const total = items.length;
+
+        // Kalau proyek 4 atau kurang, tidak perlu pagination sama sekali
+        if (total <= perPage) return;
+
+        const pageCount = Math.ceil(total / perPage);
+        let current = 1;
+
+        const pagination = document.getElementById('proyek-pagination');
+        const prevBtn = document.getElementById('proyek-prev');
+        const nextBtn = document.getElementById('proyek-next');
+        const dotsContainer = document.getElementById('proyek-dots');
+
+        pagination.classList.remove('hidden');
+        pagination.classList.add('flex');
+
+        for (let i = 1; i <= pageCount; i++) {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.setAttribute('aria-label', 'Ke halaman proyek ' + i);
+          dot.className = 'proyek-dot w-2 h-2 rounded-full bg-line transition';
+          dot.addEventListener('click', () => { current = i; render(); });
+          dotsContainer.appendChild(dot);
+        }
+        const dots = document.querySelectorAll('.proyek-dot');
+
+        function render() {
+          items.forEach((item, idx) => {
+            const page = Math.floor(idx / perPage) + 1;
+            item.classList.toggle('hidden', page !== current);
+          });
+          dots.forEach((d, i) => {
+            d.classList.toggle('bg-folder', i + 1 === current);
+            d.classList.toggle('w-6', i + 1 === current);
+            d.classList.toggle('bg-line', i + 1 !== current);
+          });
+          prevBtn.disabled = current === 1;
+          nextBtn.disabled = current === pageCount;
+        }
+
+        prevBtn.addEventListener('click', () => { if (current > 1) { current--; render(); } });
+        nextBtn.addEventListener('click', () => { if (current < pageCount) { current++; render(); } });
+
+        render();
+      })();
+
+      (function() {
+        const sections = document.querySelectorAll('main section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function setActiveLink() {
+          let currentSection = '';
+          const scrollPos = window.scrollY + 120; // offset untuk sticky navbar
+
+          sections.forEach(section => {
+            const top = section.offsetTop;
+            const height = section.offsetHeight;
+            if (scrollPos >= top && scrollPos < top + height) {
+              currentSection = section.getAttribute('id');
+            }
+          });
+
+          navLinks.forEach(link => {
+            link.classList.remove('text-ink', 'border-folder');
+            link.classList.add('text-ink/70', 'border-transparent');
+
+            if (link.getAttribute('href') === '#' + currentSection) {
+              link.classList.remove('text-ink/70', 'border-transparent');
+              link.classList.add('text-ink', 'border-folder');
+            }
+          });
+        }
+
+        window.addEventListener('scroll', setActiveLink);
+        window.addEventListener('load', setActiveLink);
       })();
     </script>
 
